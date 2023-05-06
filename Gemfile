@@ -62,14 +62,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'capistrano', '~> 3.4'
-  gem 'capistrano-maintenance', require: false     # To dislay maintance page while deploying
-  gem 'capistrano-bundler'                   # support for bundler
-  gem 'capistrano-rails'                     # automatic migrations and asset compilation
-  #gem 'capistrano-unicorn-nginx'             # plug-n-play nginx and unicorn
-  gem 'rvm1-capistrano3', require: false
-  gem 'capistrano-sidekiq'
-  gem 'capistrano3-puma', require: false
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
 end
 
 group :test do
