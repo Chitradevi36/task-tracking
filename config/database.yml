@@ -83,4 +83,4 @@ production:
   <<: *default
   database: task_tracking_production
   username: task_tracking
-  password: <%= ENV["TASK_TRACKING_DATABASE_PASSWORD"] %>
+  password: '123456'
